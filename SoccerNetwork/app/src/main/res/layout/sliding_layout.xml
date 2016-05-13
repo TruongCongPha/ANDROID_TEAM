@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <!-- main_content (main Screen ) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content"
+        >
+    </RelativeLayout>
+
+
+    <!-- Drawer Pane -->
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_pane"
+        >
+
+        <!-- Profile box -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/profile_box"
+            android:background="#96c4ea"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/icon"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/people_128"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:textSize="35px"
+                    android:textStyle="bold"
+                    android:textColor="#7b0202"
+                    android:text=""/>
+                    />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textSize="25px"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text=""/>
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city"
+                    android:textSize="25px"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text=""/>
+                />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Navigation ListView -->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_listView"
+            android:layout_below="@id/profile_box"
+            android:choiceMode="singleChoice"
+            android:background="#c050df"
+            >
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

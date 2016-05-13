@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Chỉnh sửa trận đấu"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="55px"
+        android:textStyle="bold"
+        android:textColor="#2a8bda"
+        android:layout_marginBottom="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tên trung tâm: "
+            android:id="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:minWidth="300px"
+            android:layout_marginTop="7dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEditMatchBranchName"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tên sân"
+            android:id="@+id/textView6"
+            android:minWidth="300px"
+            android:layout_below="@+id/txtEditMatchBranchName"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEditMatchFGName"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6"
+            android:layout_below="@+id/txtEditMatchBranchName"
+            android:layout_marginBottom="7dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Giờ"
+            android:id="@+id/textView7"
+            android:minWidth="300px"
+            android:layout_below="@+id/txtEditMatchFGName"
+            android:layout_alignParentStart="true"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEditMatchTime"
+            android:layout_toEndOf="@+id/textView7"
+            android:layout_below="@+id/txtEditMatchFGName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ngày"
+            android:id="@+id/textView11"
+            android:minWidth="300px"
+            android:layout_below="@+id/txtEditMatchTime" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEditMatchDate"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_marginBottom="7dp"
+            android:layout_below="@+id/txtEditMatchTime"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn ngày"
+            android:id="@+id/btnChooseDate"
+            android:layout_toEndOf="@+id/txtEditMatchDate"
+            android:layout_below="@+id/txtEditMatchTime"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Giá"
+            android:id="@+id/textView8"
+            android:minWidth="300px"
+            android:layout_below="@+id/txtEditMatchDate"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEditMatchPrice"
+            android:layout_below="@+id/txtEditMatchDate"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_marginBottom="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Địa chỉ"
+            android:id="@+id/textView10"
+            android:minWidth="300px"
+            android:layout_below="@+id/txtEditMatchPrice"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEditMatchAddress"
+            android:layout_below="@+id/txtEditMatchPrice"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_marginBottom="7dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"
+            android:id="@+id/btnUpdateEditMatch"
+            android:layout_below="@+id/txtEditMatchAddress"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="55dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btnCancelEditMatch"
+            android:layout_below="@+id/txtEditMatchAddress"
+            android:layout_toEndOf="@+id/btnUpdateEditMatch"
+            android:layout_marginLeft="40dp" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
